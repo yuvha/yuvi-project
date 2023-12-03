@@ -138,37 +138,37 @@ body {
   </style>
   <body>
     <section class="container">
-      <header>{{session["name"]}} Registration Form</header>
+      <header> Registration Form</header>
       <form action="/register" method="POST" class="form">
         <div class="input-box">
           <label></label>
-          <input type="text" name="uname"placeholder="Enter full name" required />
+          <input type="text" name="uname1"placeholder="Enter full name" required />
         </div>
 
         <div class="input-box">
           <label>Email Address</label>
-          <input type="email" name="email" placeholder="Enter email address" required >
+          <input type="email" name="email1" placeholder="Enter email address" required >
         </div>
   
         <div class="column">
           <div class="input-box">
             <label>Phone Number</label>
-            <input type="number" name="phone"placeholder="Enter phone number" minlength="10" required>
+            <input type="number" name="phone1"placeholder="Enter phone number" minlength="10" required>
           </div>
           <div class="input-box">
             <label>Birth Date</label>
-            <input type="date" name="date"placeholder="Enter birth date" required>
+            <input type="date" name="date1"placeholder="Enter birth date" required>
           </div>
         </div>
         <div class="gender-box">
           <h3>Gender</h3>
           <div class="gender-option">
             <div class="gender">
-              <input type="radio" id="check-male"  name="gender"/>
+              <input type="radio" id="check-male"  name="gender1"/>
               <label for="check-male">male</label>
             </div>
             <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
+              <input type="radio" id="check-female" name="gender1" />
               <label for="check-female">Female</label>
             </div>
             

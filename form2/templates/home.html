@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome page</title>
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ </head>
+
+<style type="text/css">
+	.container{
+		border: 2px solid black;
+	}
+table,th,td{
+	border: 1px solid black;
+	padding: 10px;
+}
+</style>
+
+
+<body>
+
+
+	<div class="container">
+	      <div class="head">
+	      	  <h1><center>Welcome to the Recruitment Portal</enter></h1>
+				<hr>
+				{% with messages = get_flashed_messages(with_categories=true) %}
+				{% if messages %}
+		
+					{% for category, message in messages %}
+						<div class="alert alert-{{category}}">{{ message }}</div>
+					{% endfor %}
+		
+				{% endif %}
+		   
+		 {% endwith %}
+	      	 <table style="width: 100%">
+	      	 <tr>
+	      	 <th><h1>About the portal</h1></th>
+	      	 <th>Features Available to Applicants</th>
+	      	</tr>
+	      	<tr>
+	      		<td>The online portal for Government recruitment is to faciliate<br> the conduct of recruiment by various departments of the government <br>of puducherry by calling for online applications.this software <br>is owned and managed by the department of personnel and Administrative Reforms(Exam cell),puducherry.</td>
+	      		<td>
+	      			<ol>
+	      				<li>read e online portal for Government recruitment is to faciliate the conduct of recruiment by var</li>
+	      				<li>read line applications.this software is owned and managed by the department of personnel and Administrative Reforms(Exam cell),p</li>
+	      				<li>read line applications.this software is owned and managed by the department of personnel and Administrative Reforms(Exam cell),p</li>
+	      				<li>read line applications.this software is owned and managed by the department of personnel and Administrative Reforms(Exam cell),p</li>
+	      				<li>read line applications.this software is owned and managed by the department of personnel and Administrative Reforms(Exam cell),p</li>
+	      				<li>read line applications.this software is owned and managed by the department of personnel and Administrative Reforms(Exam cell),p</li>
+	      				
+	      			</ol>
+	      		</td>
+
+
+	      	</table>
+	      </div>
+	      <br><br>
+	      <p><center>Please select the Recruiment from the list below to know the details or <a href="#">login </a>to continue.</center>
+	       <table style="width: 100%">
+	       	<tr>
+	       		<th>Name of the Recruiements</th>
+	       		<th>Name of the department/Institusion</th>
+	       		<th>Application Open Time</th>
+	       		<th>Application Close Time</th>
+	       	</tr>
+	       	<tr>
+	       		<td><a href="{{url_for('register',id='Police')}}">Register Govnt Job</a></td>
+	       		<td>POLICE DEPARTMENT</td>
+	       		<td>30-10-2023 10:00:00</td>
+	       		<td>29-11-2023 17:45:00</td>
+	      	 </tr>
+	      	 <tr>
+	      	 	<td><a href="{{url_for('register',id='Bank')}}">Register Govnt Job</a></td>
+	      	 	<td>BANK DEPARTMENT</td>
+	       		<td>30-10-2023 10:00:00</td>
+	       		<td>29-11-2023 17:45:00</td>
+	      	 
+	      	 </tr>
+	      	 <tr><td><a href="{{url_for('register',id='Railway')}}">Register Govnt Job</a></td>
+	      	 	<td>RAILWAY DEPARTMENT</td>
+	       		<td>30-10-2023 10:00:00</td>
+	       		<td>29-11-2023 17:45:00</td>
+	      	 	</tr>
+	      	 	<tr><td><a href="{{url_for('register',id='Clerk')}}">Register</a></td>
+	      	 		<td>CLERK DEPARTMENT</td>
+	       		<td>30-10-2023 10:00:00</td>
+	       		<td>29-11-2023 17:45:00</td>
+	      	 </tr>
+	      	 <tr><td><a href="{{url_for('register',id='Teacher')}}">Register Govnt Job</a></td>
+	      	 	<td>TEACHING DEPARTMENT</td>
+	       		<td>30-10-2023 10:00:00</td>
+	       		<td>29-11-2023 17:45:00</td>
+	      	 </tr>
+	      	 </table>
+	     
+
+
+
+
+	</div>
+
+</body>
+</html>
+<script>
+    
+    $(document).ready (function(){
+     $(".alert").hide(3000)
+                
+     });      
+  </script>
